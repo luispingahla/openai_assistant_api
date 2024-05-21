@@ -83,17 +83,12 @@ def chat_display(client, thread):
 
 # Main executable function
 def main(selected_assistant_id, prompt, data_str):
-    OAIK1 = "sk-proj-3JRgQ"
-    OAIK2 = "BuQOQbRNaGMR"
-    OAIK3 = "Q7UT3BlbkFJVhs"
-    OAIK4 = "0Ks8aKl3Q2SAT6BKm"
-    OAIK = OAIK1 + OAIK2 + OAIK3 + OAIK4
-    openai_key = OAIK
-    api_k = openai_key
+    openai_key = "sk-proj-3JRgQBuQOQbRNaGMRQ7UT3BlbkFJVhs0Ks8aKl3Q2SAT6BKm"
+    api_key = openai_key
     client = OpenAI(api_key=openai_key)
 
-    if api_k:
-        client = OpenAI(api_key=api_k)
+    if api_key:
+        client = OpenAI(api_key=api_key)
         assistant_id_option = get_assistants_ids_list(client)
 
         if selected_assistant_id in assistant_id_option:
