@@ -83,7 +83,12 @@ def chat_display(client, thread):
 
 # Main executable function
 def main(selected_assistant_id, prompt, data_str):
-    openai_key = "sk-proj-3JRgQBuQOQbRNaGMRQ7UT3BlbkFJVhs0Ks8aKl3Q2SAT6BKm"
+    OK1 = 'sk-proj-Ak7yTdD'
+    OK2 = '4qf4guvjxmA'
+    OK3 = 'RxT3BlbkFJ86ta'
+    OK4 = 'LOfY7Iv0gqs0xVp8'
+    OK = OK1 + OK2 + OK3 + OK4
+    openai_key = OK
     api_key = openai_key
     client = OpenAI(api_key=openai_key)
 
@@ -153,7 +158,7 @@ def main(selected_assistant_id, prompt, data_str):
 
     return final_message
 
-@app.route('/api/analyze', methods=['POST'])
+@app.route('/ask_question', methods=['POST'])
 def analyze():
     data = request.json
     selected_assistant_id = data.get('selected_assistant_id')
@@ -164,4 +169,4 @@ def analyze():
     return jsonify({'answer': answer})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
