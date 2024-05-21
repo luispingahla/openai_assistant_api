@@ -1,0 +1,6 @@
+Table Name,Metric Name,Column ID,Column Name,Error Hits,Batch ID
+test_df_s3_wrong4,Case consistency,25,first-name,0,17
+test_df_s3_wrong4,Case consistency,26,email,50,17
+test_df_s3_wrong4,Case consistency,34,title,50,17
+test_df_s3_wrong4,Case consistency,36,last_name,50,17
+test_df_s3_wrong4,Referential integrity,24,id,50,17
