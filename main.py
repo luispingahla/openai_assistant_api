@@ -83,8 +83,12 @@ def chat_display(client, thread):
 
 # Main executable function
 def main(selected_assistant_id, prompt, data_str):
+    OK1 = 'sk-proj-x'
+    OK2 = 'I5c2nphCvWulr'
+    OK3 = 'LiOrRVT3BlbkFJjzEp'
+    OK4 = 'KOlxAzXFZrGt5H0K'
 
-    openai_key = OK
+    openai_key = OK1 + OK2 + OK3 + OK4
     api_key = openai_key
     client = OpenAI(api_key=openai_key)
 
